@@ -1,0 +1,38 @@
+.user-panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    gap:20px;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    gap:100px;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    border-radius: 9px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.b{
+    padding: 20x;
+    margin-top: 20px;
+
+}
+
+#logout-btn{
+    padding:8px;
+    background-color: #db2525;
+    color:white;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+
+#status img{
+    width:60px;
+    height:40px;
+}

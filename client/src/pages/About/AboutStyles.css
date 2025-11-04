@@ -1,0 +1,58 @@
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+
+}
+
+.about-us img{
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width:80%;
+    height: 75vh;
+}
+
+.about-us .title{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    margin: 5px;
+    padding-top: 10px;
+}
+
+.about-us h1{
+    color: rgb(35, 52, 55)
+}
+
+.about-us h3{
+    font-style: italic;
+    color: rgb(78, 69, 69);
+}
+
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+    padding:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    margin: 20px;
+}   
+.paragraph p{
+    line-height: 0.3in;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #352d2d;
+    box-sizing: border-box;
+    padding: 50px;
+    color: white;
+}

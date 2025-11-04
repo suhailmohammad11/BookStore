@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: #8c9676;
+    color:white;
+    gap:300px;
+}
+
+nav .menu{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:40px
+
+}
+
+.menu a{
+    color: white;
+}
