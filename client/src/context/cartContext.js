@@ -13,7 +13,7 @@ export const CartContextProvider = ({ children }) => {
     if (!user?.token) return;
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/cart/add",
+        "https://bookstore-backend-tpqs.onrender.com/api/cart/add",
         { bookId: book._id },
         { headers: { Authorization: `Bearer ${user.token}` } }
       );
@@ -29,7 +29,7 @@ export const CartContextProvider = ({ children }) => {
   const getCart = async () => {
     if (!user?.token) return;
     try {
-      const response = await axios.get("http://localhost:4000/api/cart/", {
+      const response = await axios.get("https://bookstore-backend-tpqs.onrender.com/api/cart/", {
         headers: { Authorization: `Bearer ${user.token}` },
       });
 
@@ -44,7 +44,7 @@ export const CartContextProvider = ({ children }) => {
       if (!user?.token) return;
     try{
 
-      const response= await axios.delete(`http://localhost:4000/api/cart/${bookId}`,{
+      const response= await axios.delete(`https://bookstore-backend-tpqs.onrender.com/api/cart/${bookId}`,{
         headers:{
           Authorization:`Bearer ${user.token}`
         }

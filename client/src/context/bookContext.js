@@ -14,7 +14,7 @@ const getBooks = useCallback(async () => {
   if (!user?.token) return; // make sure token exists
 
   try {
-    const response = await axios.get("http://localhost:4000/api/books", {
+    const response = await axios.get("https://bookstore-backend-tpqs.onrender.com/api/books", {
       headers: {
         Authorization: `Bearer ${user.token}`,   
       },
@@ -26,7 +26,7 @@ const getBooks = useCallback(async () => {
 }, [user]);
   const removeBook = async (_id) => {
     try {
-      await axios.delete(`http://localhost:4000/api/books/${_id}`, {
+      await axios.delete(`https://bookstore-backend-tpqs.onrender.com/api/books/${_id}`, {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
@@ -48,7 +48,7 @@ const getBooks = useCallback(async () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/books",
+        "https://bookstore-backend-tpqs.onrender.com/api/books",
         form,
         {
           headers: {
@@ -93,7 +93,7 @@ const editBook = async (e) => {
   try {
     const { _id, title, author, price, desc } = updateForm;
     await axios.patch(
-      `http://localhost:4000/api/books/${_id}`,
+      `https://bookstore-backend-tpqs.onrender.com/api/books/${_id}`,
       { title, author, price, desc },
       {
         headers: { Authorization: `Bearer ${user.token}` },

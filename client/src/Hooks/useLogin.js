@@ -7,7 +7,7 @@ export const useLogin = () => {
 
   const login = async (email, password, type) => {
     try {
-      const response = await fetch("http://localhost:4000/api/users/login", {
+      const response = await fetch("https://bookstore-backend-tpqs.onrender.com/api/users/login", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ email, password , type}),
