@@ -41,15 +41,14 @@ const SignUp = () => {
       tempErrors.password = "Minimum length of password is 8";
       isValid = false;
     } else if (!/[A-Z]/.test(password)) {
-      tempErrors.password("Password should contain atleast one Capital Letter");
+      tempErrors.password="Password should contain atleast one Capital Letter";
       isValid = false;
     } else if (!/[0-9]/.test(password)) {
-      tempErrors.password("Password should contain atleast one number");
+      tempErrors.password="Password should contain atleast one number";
       isValid = false;
     } else if (!/[@#!&%*+]/.test(password)) {
-      tempErrors.password(
-        "Password should contain atleast one Special character"
-      );
+      tempErrors.password=
+        "Password should contain atleast one Special character";
       isValid = false;
     }
 

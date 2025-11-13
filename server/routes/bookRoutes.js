@@ -7,7 +7,6 @@ router.use(requireAuth);
 router.get("/", getBooks);
 
 router.get("/:id", getBook);
-
 router.post("/", addBook);
 
 router.patch("/:id", editBook);
